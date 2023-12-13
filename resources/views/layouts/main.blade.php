@@ -17,8 +17,8 @@
                 </div>
                 <div class="opcoes-mn-lt">
                     <ul>
-                        <a href=""><li><i class="fa-solid fa-table-columns"></i></li></a>
-                        <a href=""><li><i class="fa-solid fa-headset"></i></li></a>
+                        <a href=""><li class=@yield('DashAtivo')><i class="fa-solid fa-table-columns"></i></li></a>
+                        <a href="/tickets"><li class=@yield('TicketsAtivo')><i class="fa-solid fa-headset"></i></li></a>
                     </ul>
                 </div>
             </div>
@@ -52,12 +52,8 @@
                     </div>
                 </div>
             </div>
+            @yield('content')
         </div>
-        @yield('content')
     </div>
 </body>
 </html>
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

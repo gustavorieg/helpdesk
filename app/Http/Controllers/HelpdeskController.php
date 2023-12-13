@@ -17,5 +17,12 @@ class HelpdeskController extends Controller
         return view('index');
     }
 
-   
+   public function tickets(){
+
+    if (Auth::check() != true){
+        return view('login');
+    }
+    
+    return view('tickets');
+   }
 }
