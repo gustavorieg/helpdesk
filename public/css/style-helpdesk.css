@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/***********************************************/
+/*                Menu lateral                 */
+/***********************************************/
