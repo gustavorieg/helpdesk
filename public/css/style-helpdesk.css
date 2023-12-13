@@ -57,7 +57,7 @@ body{
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 12px 15px;
+    padding: 16px 15px;
     margin: 5px 15px;
     font-size: 18px;
     color: #8E8E8E;
@@ -129,21 +129,18 @@ body{
 .navtop-hamburger a{
     color: #501A92;
     padding: 10px 13px;
-    
+    border-radius: 10px;
 }
 
-.navbar-alert ul li {
-    display: flex;
-}
-
-.navbar-user img {
-    width: 36px;
-    height: 36px;
+.navtop-hamburger a:hover {
+    background-color: #501A92;
+    color: #fff;
+    transition: 0.5s;
 }
 
 .navbar-input {
     background-color: #E5E5E5;
-    border: 1px solid #888888;
+    border: 1px solid #888888ad;
     height: 80%;
     width: 100%;
     margin: auto 0px auto 0px;
@@ -159,12 +156,50 @@ body{
 }
 
 .navbar-input input {
-    width: 95%;
+    max-width: 100%;
     background-color: #E5E5E5;
     border: none;
     height: 100%;
     border-radius: 10px;
 }
+
 .navbar-input input:focus{
     outline: 0;
+}
+
+.navbar-alert {
+    margin: auto 10px auto auto;
+}
+
+.navbar-alert ul li {
+    display: flex;
+    margin: auto 5px auto 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    color: #501A92;
+}
+
+.navbar-alert ul li:hover {
+    background-color: #501A92;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.navbar-alert ul li i {
+    margin: auto;
+}
+
+.navbar-user {
+    margin: auto;
+}
+
+.navbar-user p {
+    margin: auto auto auto 5px;
+}
+
+.navbar-user img {
+    width: 48px;
+    height: 48px;
 }
