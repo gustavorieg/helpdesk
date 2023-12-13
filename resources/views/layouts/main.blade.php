@@ -36,7 +36,7 @@
                     </div>
                     <div class="navbar-input">
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <input type="text" name="" id="">
+                        <input type="text" name="" placeholder="Pesquisar...">
                     </div>
                 </div>
                 <div class="navbar-alert-user">
@@ -47,7 +47,8 @@
                         </ul>
                     </div>
                     <div class="navbar-user">
-                        
+                        <img src="/img/imagem-do-usuario.png" alt="">
+                        <p>Gustavo Rieg</p>
                     </div>
                 </div>
             </div>
