@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&family=Roboto');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,8 +10,86 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: row;
+    background-color: #E5E5E5;
+    font-family: 'Rethink Sans', sans-serif;
 }
 
 /***********************************************/
 /*                Menu lateral                 */
 /***********************************************/
+
+.container-lt {
+    height: 100vh;
+    background-color: #fff;
+}
+
+.conteudo-lt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.logo-lt {
+    margin: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.247);
+}
+
+.logo-lt img {
+    width: 64px;
+}
+
+.opcoes-mn-lt {
+    margin-top: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ul a {
+    text-decoration: none;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 15px;
+    margin: 5px 15px;
+    font-size: 18px;
+    color: #8E8E8E;
+    border-radius: 10px;
+}
+
+li:hover {
+    background-color: #501A92;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.user-lt {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.user-lt a {
+    border-radius: 10px;
+    padding: 12px 15px;
+    background-color: #888888;
+    color: #fff;
+}
+
+/***********************************************/
+/*                      Site                   */
+/***********************************************/
+
+.container-site {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+
