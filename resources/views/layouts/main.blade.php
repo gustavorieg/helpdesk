@@ -13,7 +13,7 @@
         <div class="conteudo-lt">
             <div class="logo-mn-lt">
                 <div class="logo-lt">
-                    <img src="/img/icon_help-desk.png" alt="">
+                    <a href="/"><img src="/img/icon_help-desk.png" alt=""></a>
                 </div>
                 <div class="opcoes-mn-lt">
                     <ul>
