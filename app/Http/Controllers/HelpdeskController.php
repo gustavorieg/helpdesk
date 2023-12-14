@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ticket;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Yajra\DataTables\DataTables as DataTables;
 
 class HelpdeskController extends Controller
 {
@@ -24,5 +26,12 @@ class HelpdeskController extends Controller
     }
     
     return view('tickets');
+   }
+
+   public function ticketsAjax(){
+
+    $tickets = Ticket::select();
+
+    return DataTables::of($tickets)->make(true);
    }
 }

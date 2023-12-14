@@ -7,6 +7,8 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/style-helpdesk.css">
     <script src="https://kit.fontawesome.com/9e57034c47.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+   
 </head>
 <body>
     <div class="container-lt">
@@ -55,5 +57,7 @@
             @yield('content')
         </div>
     </div>
+
+    
 </body>
 </html>

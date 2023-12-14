@@ -13,3 +13,4 @@ Route::controller(LoginController::class)->group(function(){
 
 Route::get('/', [HelpdeskController::class, 'index'])->name('index');
 Route::get('/tickets', [HelpdeskController::class, 'tickets']);
+Route::get('/tickets/ajax', [HelpdeskController::class, 'ticketsAjax'])->name('tickets.ajax');
