@@ -39,7 +39,7 @@
                     </ul>
                 </div>
                 <div class="table-tickets" style="max-height: 100%">
-                    <table id="myTable" class="display pageResize" style="">
+                    <table id="myTable" class="display" style="max-height: 100%">
                         <thead>
                             <tr>
                                 <th>Título</th>
@@ -71,12 +71,12 @@
                     language: {
                         url: '//cdn.datatables.net/plug-ins/1.13.7/i18n/pt-BR.json',
                     },
-                    pageResize: true,
                     scrollCollapse: true,
                     scrollY: '100%',
-                    lengthChange: false,
                     processing: true,
+                    paging: true,
                     serverSide: true,
+                    autoFill: true,
                     "ajax": "{{route('tickets.ajax')}}",
                     "columns": [
                         {"data": 'titulo'},
