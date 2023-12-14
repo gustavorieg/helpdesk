@@ -39,7 +39,7 @@
                     </ul>
                 </div>
                 <div class="table-tickets" style="max-height: 100%">
-                    <table id="myTable" class="display" style="">
+                    <table id="myTable" class="display pageResize" style="">
                         <thead>
                             <tr>
                                 <th>Título</th>
@@ -67,12 +67,14 @@
 
     <script>
         $(document).ready(function(){
-            $('#myTable').DataTable({
+            $('#myTable').DataTable({   
+                    language: {
+                        url: '//cdn.datatables.net/plug-ins/1.13.7/i18n/pt-BR.json',
+                    },
                     pageResize: true,
                     scrollCollapse: true,
                     scrollY: '100%',
                     lengthChange: false,
-                    info: false,
                     processing: true,
                     serverSide: true,
                     "ajax": "{{route('tickets.ajax')}}",
