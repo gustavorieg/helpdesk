@@ -30,8 +30,21 @@ class HelpdeskController extends Controller
 
    public function ticketsAjax(){
 
+    if (Auth::check() != true){
+        return view('login');
+    }
+
     $tickets = Ticket::select();
 
     return DataTables::of($tickets)->make(true);
+   }
+
+   public function abrirTicket(){
+
+    if (Auth::check() != true){
+        return view('login');
+    }
+
+    return view('newTicket');
    }
 }

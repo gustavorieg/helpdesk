@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="box-novo-ticket">
-            <button><i class="fa-solid fa-user-plus"></i> Novo Ticket</button>
+            <a href="/abrirticket"><i class="fa-solid fa-user-plus"></i> Novo Ticket</button></a>
         </div>
     </div>
     <div class="container-tickets">
@@ -39,7 +39,7 @@
                         <li>20 <span style="color:green; font-size: 14px; font-weight: 100">Fechados</span></li>
                     </ul>
                 </div>
-                <div class="table-tickets" >
+                <div class="table-tickets">
                     <table id="myTable" class="display pageResize nowrap">
                         <thead>
                             <tr>
@@ -48,7 +48,7 @@
                                 <th>Departamento</th>
                             </tr>
                         </thead>
-                        <tbody style="">
+                        <tbody>
                             <tr>
                                 <td></td>
                                 <td></td>

@@ -249,12 +249,13 @@ body{
     margin: auto 0px;
 }
 
-.box-novo-ticket button{
+.box-novo-ticket a{
     background-color: #888888;
     border: none;
     color: #fff;
     padding: 5px 15px;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .box-novo-ticket button:hover{

@@ -21,6 +21,7 @@
                     <ul>
                         <a href=""><li class=@yield('DashAtivo')><i class="fa-solid fa-table-columns"></i></li></a>
                         <a href="/tickets"><li class=@yield('TicketsAtivo')><i class="fa-solid fa-headset"></i></li></a>
+                        <a href="/abrirticket"><li class=@yield('TicketAtivo')><i class="fa-solid fa-plus"></i></li></a>
                     </ul>
                 </div>
             </div>
