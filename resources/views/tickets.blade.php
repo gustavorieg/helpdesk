@@ -5,6 +5,7 @@
 @section('TicketsAtivo', 'ativo')
 
 @section('content')
+
     <div class="tit-ticket">
         <div class="icon-suporte">
             <div class="icon-ticket">
@@ -38,8 +39,8 @@
                         <li>20 <span style="color:green; font-size: 14px; font-weight: 100">Fechados</span></li>
                     </ul>
                 </div>
-                <div class="table-tickets" style="max-height: 100%">
-                    <table id="myTable" class="display" style="max-height: 100%">
+                <div class="table-tickets" >
+                    <table id="myTable" class="display pageResize nowrap">
                         <thead>
                             <tr>
                                 <th>Título</th>
@@ -47,7 +48,7 @@
                                 <th>Departamento</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody style="">
                             <tr>
                                 <td></td>
                                 <td></td>
@@ -64,6 +65,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="//cdn.datatables.net/plug-ins/1.13.7/features/scrollResize/dataTables.scrollResize.min.js"></script>
 
     <script>
         $(document).ready(function(){
@@ -71,18 +73,19 @@
                     language: {
                         url: '//cdn.datatables.net/plug-ins/1.13.7/i18n/pt-BR.json',
                     },
+                    scrollResize: true,
+                    scrollY: 100,
                     scrollCollapse: true,
-                    scrollY: '100%',
-                    lengthChange: false,
+                    paging: true,
                     processing: true,
                     serverSide: true,
-                    autoFill: true,
                     "ajax": "{{route('tickets.ajax')}}",
                     "columns": [
                         {"data": 'titulo'},
                         {"data": 'prioridade'},
                         {"data": 'departamento'},
                     ]
+
             });
         })
     </script>

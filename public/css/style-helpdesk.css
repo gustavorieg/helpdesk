@@ -294,6 +294,11 @@ body{
     border-radius: 0px 10px 10px 10px
 }
 
+.table-tickets {
+    margin: 10px;
+    height: 80%;
+}
+
 .info-tickets {
     margin: 20px 0px 0px 0px;
 }
