@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="/css/style-helpdesk.css">
     <script src="https://kit.fontawesome.com/9e57034c47.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style-datatables.css"/>
-   
+    <link rel="stylesheet" href="/css/style-helpdesk.css">
 </head>
 <body>
     <div class="container-lt">
@@ -33,14 +32,14 @@
     <div class="container-site">
         <div class="conteudo-site">
             <div class="navtop">
-                <div class="navbar-hamb-input">
-                    <div class="navtop-hamburger">
-                        <a href=""><i class="fa-solid fa-bars"></i></a>
+                <div class="navbar-refresh-input">
+                    <div class="navtop-refresh">
+                        <a href=""><i class="fa-solid fa-arrows-rotate"></i></a>
                     </div>
-                    <div class="navbar-input">
+                    <!--<div class="navbar-input">
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                         <input type="text" name="" placeholder="Pesquisar...">
-                    </div>
+                    </div>-->
                 </div>
                 <div class="navbar-alert-user">
                     <div class="navbar-alert">

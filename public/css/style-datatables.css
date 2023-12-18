@@ -692,7 +692,8 @@ table.dataTable td {
     height: 0;
     overflow: hidden;
     margin: 0 !important;
-    padding: 0 !important
+    padding: 0 !important;
+    height: 100%;
 }
 
 .dataTables_wrapper.no-footer .dataTables_scrollBody {
@@ -811,6 +812,7 @@ html.dark .dataTables_wrapper .dataTables_paginate .paginate_button:active {
 
 .dataTables_scrollBody {
     background-color: #fff;
+    height: 100%;
 }
 
 .dataTables_scrollHead {

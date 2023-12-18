@@ -21,6 +21,7 @@ body{
 .container-lt {
     height: 100vh;
     background-color: #fff;
+    width: 5vw;
 }
 
 .conteudo-lt {
@@ -32,6 +33,7 @@ body{
 
 .logo-lt {
     margin: 10px;
+    text-align: center;
     border-bottom: 1px solid rgba(128, 128, 128, 0.247);
 }
 
@@ -92,9 +94,8 @@ body{
 /***********************************************/
 
 .container-site {
-    width: 100%;
+    width: 95vw;
     height: 100vh;
-
 }
 
 .conteudo-site {
@@ -122,14 +123,14 @@ body{
     text-decoration: none;
 }
 
-.navbar-hamb-input {
+.navbar-refresh-input {
     display: flex;
     flex-direction: row;
     width: 60%;
     text-align: left;
 }
 
-.navtop-hamburger {
+.navtop-refresh {
     display: flex;
     margin: auto 0px;
     background-color: #EEEEEE;
@@ -137,13 +138,13 @@ body{
     margin-right: 15px;
 }
 
-.navtop-hamburger a{
+.navtop-refresh a{
     color: #501A92;
     padding: 10px 13px;
     border-radius: 10px;
 }
 
-.navtop-hamburger a:hover {
+.navtop-refresh a:hover {
     background-color: #501A92;
     color: #fff;
     transition: 0.5s;
@@ -216,7 +217,7 @@ body{
 }
 
 .tit-ticket {
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -316,4 +317,114 @@ body{
     margin-left: 10px;
     font-weight: bold;
     font-size: 18px;
+}
+
+.box-table-info form{
+    height: 100%;
+}
+
+.conteudo-table-ticket input {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-table-ticket input:focus{
+    outline: 0;
+}
+
+.conteudo-table-ticket span {
+    color: red;
+}
+
+.inputs {
+    height: 100%;
+    margin: 10px;
+}
+
+.input {
+    margin-bottom: 5px;
+}
+
+.input select {
+    padding: 5px;
+}
+
+.text-desc {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 20px 5px 10px;
+}
+
+.input-titulo input {
+    padding: 5px;
+}
+
+.input-texto input {
+    width: 100%;
+    height: 60px;
+    padding-left: 5px;
+}
+
+.button-submit {
+    margin: 10px;
+}
+
+.button-submit button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #888888;
+    color: #Fff;
+}
+
+.button-submit button:hover{
+    background-color: #501A92;
+    transition: 0.5s;
+}
+
+.conteudo-table-ticket input,select{
+    border: 1px solid #88888886;
+}
+
+.container-errorsForm {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+@media screen and (max-width: 1450px) {
+
+    .container-lt {
+        height: 100vh;
+        background-color: #fff;
+        width: 6%;
+    }
+    
+    .container-site {
+        width: 94%;
+        height: 100vh;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .container-lt {
+        height: 100vh;
+        background-color: #fff;
+        width: 10%;
+    }
+    
+    .container-site {
+        width: 90%;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-lt {
+        display: none;
+    }
 }

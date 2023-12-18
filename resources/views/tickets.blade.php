@@ -5,7 +5,6 @@
 @section('TicketsAtivo', 'ativo')
 
 @section('content')
-
     <div class="tit-ticket">
         <div class="icon-suporte">
             <div class="icon-ticket">
@@ -32,17 +31,18 @@
             <div class="box-table-info">
                 <div class="info-tickets">
                     <ul>
-                        <li>30 <span style="color:#888888; font-size: 14px; font-weight: 100">Total Tickets</span></li>
-                        <li>8 <span style="color:#888888; font-size: 14px; font-weight: 100">Abertos</span></li>
-                        <li>14 <span style="color:blue; font-size: 14px; font-weight: 100">Em Progresso</span></li>
-                        <li>2 <span style="color:red; font-size: 14px; font-weight: 100">Atrasados</span></li>
-                        <li>20 <span style="color:green; font-size: 14px; font-weight: 100">Fechados</span></li>
+                        <li>{{$allTickets->count()}} <span style="color:#888888; font-size: 14px; font-weight: 100">Total Tickets</span></li>
+                        <li>{{$ticketsAbertos->count()}} <span style="color:#888888; font-size: 14px; font-weight: 100">Abertos</span></li>
+                        <li>{{$ticketsProgresso->count()}} <span style="color:blue; font-size: 14px; font-weight: 100">Em Progresso</span></li>
+                        <li>{{$ticketsAtrasados->count()}} <span style="color:red; font-size: 14px; font-weight: 100">Atrasados</span></li>
+                        <li>{{$ticketsFechados->count()}} <span style="color:green; font-size: 14px; font-weight: 100">Fechados</span></li>
                     </ul>
                 </div>
                 <div class="table-tickets">
-                    <table id="myTable" class="display pageResize nowrap">
-                        <thead>
+                    <table id="myTable" class="display pageResize nowrap" >
+                        <thead> 
                             <tr>
+                                <th>Requisitante</th>
                                 <th>Título</th>
                                 <th>Prioridade</th>
                                 <th>Departamento</th>
@@ -50,6 +50,7 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -81,6 +82,7 @@
                     serverSide: true,
                     "ajax": "{{route('tickets.ajax')}}",
                     "columns": [
+                        {"data": 'name'},
                         {"data": 'titulo'},
                         {"data": 'prioridade'},
                         {"data": 'departamento'},

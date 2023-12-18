@@ -16,3 +16,6 @@ Route::get('/', [HelpdeskController::class, 'index'])->name('index');
 Route::get('/tickets', [HelpdeskController::class, 'tickets']);
 Route::get('/tickets/ajax', [HelpdeskController::class, 'ticketsAjax'])->name('tickets.ajax');
 Route::get('/abrirticket', [HelpdeskController::class, 'abrirTicket']);
+
+Route::post('/abrirticket', [HelpdeskController::class, 'ticketStore']);
+
