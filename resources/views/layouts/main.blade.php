@@ -29,8 +29,18 @@
             </div>
         </div>
     </div>
+
     <div class="container-site">
         <div class="conteudo-site">
+            <div class="container-errorsForm">
+                @if ($errors->any())
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{$error}}</li>
+                        @endforeach
+                    </ul>
+                @endif
+            </div>
             <div class="navtop">
                 <div class="navbar-refresh-input">
                     <div class="navtop-refresh">

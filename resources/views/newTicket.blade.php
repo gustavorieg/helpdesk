@@ -4,8 +4,10 @@
 
 @section('TicketAtivo', 'ativo')
 
-@section('content')
 
+
+@section('content')
+    
     <div class="tit-ticket">
         <div class="icon-suporte">
             <div class="icon-ticket">
@@ -70,15 +72,6 @@
                         </div>
                     </div>
                 </form>
-                <div class="container-errorsForm">
-                    @if ($errors->any())
-                        <ul>
-                            @foreach($errors->all() as $error)
-                                <li>{{$error}}</li>
-                            @endforeach
-                        </ul>
-                    @endif
-                </div>
             </div>
         </div>
     </div>

@@ -388,12 +388,41 @@ body{
 }
 
 .container-errorsForm {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
     top: 0;
+    margin: auto;
+    position: absolute;
+    margin: 10px;
+    animation: go-back 1s ease-in-out;
 }
+
+.container-errorsForm ul {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.container-errorsForm li{
+    display: inline-block;
+    margin: 2px;
+    background-color: #501A92;
+    color: #fff;
+    padding: 5px;
+}
+
+
+@keyframes go-back {
+    from {
+        transform: translateY(-5vh);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width: 1450px) {
 
     .container-lt {
