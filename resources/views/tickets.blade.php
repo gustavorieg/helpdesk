@@ -45,11 +45,13 @@
                                 <th>Requisitante</th>
                                 <th>Título</th>
                                 <th>Prioridade</th>
-                                <th>Departamento</th>
+                                <th>Atribuido</th>
+                                <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -82,10 +84,11 @@
                     serverSide: true,
                     "ajax": "{{route('tickets.ajax')}}",
                     "columns": [
-                        {"data": 'name'},
+                        {"data": 'requisitante'},
                         {"data": 'titulo'},
                         {"data": 'prioridade'},
-                        {"data": 'departamento'},
+                        {"data": 'atribuido'},
+                        {"data": 'status'},
                     ],
                     createdRow: function(row, data) {
                         $(row).on('click', function() {

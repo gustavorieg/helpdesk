@@ -19,3 +19,4 @@ Route::get('/abrirticket', [HelpdeskController::class, 'abrirTicket']);
 
 Route::post('/abrirticket', [HelpdeskController::class, 'ticketStore']);
 Route::get('/ticket/{id}', [HelpdeskController::class, 'ticket']);
+Route::post('/ticket/edit/{id}', [HelpdeskController::class, 'ticketUpdate']);

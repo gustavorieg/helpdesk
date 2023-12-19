@@ -27,7 +27,7 @@
                 <p>Ticket</p>
             </div>
             <div class="box-table-info">
-                <form action="" method="post">
+                <form action="/ticket/edit/{{$ticket->id}}" method="post">
                     @csrf
                     <div class="conteudo-table-ticket">
                         <div class="input-menor-dis">
@@ -49,7 +49,7 @@
                             </div>
                             <div class="input">
                                 <label for="">Atribuir para</label><br>
-                                <select name="prioridades">
+                                <select name="atribuido">
                                     @foreach($users as $user)
                                         <option value="{{$user->name}}">{{$user->name}}</option>
                                     @endforeach
