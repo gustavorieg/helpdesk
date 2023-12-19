@@ -60,7 +60,6 @@ class HelpdeskController extends Controller
 
    public function ticketStore(TicketFormRequest $request){
     
-    
     if (Auth::check() != true){
         return view('login');
     }
@@ -78,5 +77,16 @@ class HelpdeskController extends Controller
     $ticket->save();
 
     return redirect('tickets');
+   }
+
+   public function ticket($id){
+
+    if (Auth::check() != true){
+        return view('login');
+    }
+
+    $users = User::all();
+    $ticket = Ticket::FindOrFail($id);
+    return view('ticket', ['ticket' => $ticket, 'users' => $users]);
    }
 }

@@ -86,8 +86,12 @@
                         {"data": 'titulo'},
                         {"data": 'prioridade'},
                         {"data": 'departamento'},
-                    ]
-
+                    ],
+                    createdRow: function(row, data) {
+                        $(row).on('click', function() {
+                            window.location.href = '/ticket/' + data.id; 
+                        });
+                    }
             });
         })
     </script>

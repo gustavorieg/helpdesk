@@ -4,8 +4,6 @@
 
 @section('TicketAtivo', 'ativo')
 
-
-
 @section('content')
     
     <div class="tit-ticket">
@@ -69,6 +67,15 @@
                         </div>
                         <div class="button-submit">
                             <button>Enviar</button>
+                        </div>
+                        <div class="container-errorsForm">
+                            @if ($errors->any())
+                                <ul>
+                                    @foreach($errors->all() as $error)
+                                        <li>- {{$error}}</li>
+                                    @endforeach
+                                </ul>
+                            @endif
                         </div>
                     </div>
                 </form>

@@ -18,4 +18,4 @@ Route::get('/tickets/ajax', [HelpdeskController::class, 'ticketsAjax'])->name('t
 Route::get('/abrirticket', [HelpdeskController::class, 'abrirTicket']);
 
 Route::post('/abrirticket', [HelpdeskController::class, 'ticketStore']);
-
+Route::get('/ticket/{id}', [HelpdeskController::class, 'ticket']);

@@ -822,3 +822,7 @@ html.dark .dataTables_wrapper .dataTables_paginate .paginate_button:active {
 .dataTables_length {
     margin-bottom: 5px;
 }
+
+tr {
+    cursor: default;
+}
